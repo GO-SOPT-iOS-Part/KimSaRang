@@ -1,11 +1,12 @@
 //
 //  SceneDelegate.swift
-//  GO-SOPT-FIRST-SEMINAR
+//  GO-SOPT-TVING
 //
-//  Created by 김사랑 on 2023/04/07.
+//  Created by 김사랑 on 2023/04/20.
 //
-
 import UIKit
+
+import Inject
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -13,14 +14,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        // 1.
+        
         guard let windowScene = (scene as? UIWindowScene) else { return }
-    // 2.
+    
+        let injectViewController = Inject.ViewControllerHost(LoginViewController())
         self.window = UIWindow(windowScene: windowScene)
-    // 3.
-        let navigationController = UINavigationController(rootViewController: NewViewController())
-        self.window?.rootViewController = navigationController
-    // 4.
+        self.window?.rootViewController = injectViewController
         self.window?.makeKeyAndVisible()
     }
 }
