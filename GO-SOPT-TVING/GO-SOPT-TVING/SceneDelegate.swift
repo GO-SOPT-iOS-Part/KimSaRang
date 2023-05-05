@@ -17,9 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
     
-        let injectViewController = Inject.ViewControllerHost(LoginViewController())
+//        let injectViewController = Inject.ViewControllerHost(MyPageViewController())
         self.window = UIWindow(windowScene: windowScene)
-        self.window?.rootViewController = injectViewController
+        let navigationController = UINavigationController(rootViewController: MyPageViewController())
+        self.window?.rootViewController = navigationController
+//        self.window?.rootViewController = injectViewController
         self.window?.makeKeyAndVisible()
     }
 }

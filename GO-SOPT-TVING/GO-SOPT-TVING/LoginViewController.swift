@@ -16,13 +16,13 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUI()
+        style()
         setLayout()
         setReact()
         // Do any additional setup after loading the view.
     }
 
-    func configureUI() {
+    func style() {
         view.addSubview(loginView)
     }
 
@@ -39,6 +39,7 @@ class LoginViewController: UIViewController {
         loginView.clearIDButton.addTarget(self, action: #selector(tappedClearIDButton), for: .touchUpInside)
         loginView.clearPWButton.addTarget(self, action: #selector(tappedClearPWButton), for: .touchUpInside)
         loginView.securityButton.addTarget(self, action: #selector(tappedSecurityButton), for: .touchUpInside)
+       
     }
 
     func hideButton() {
@@ -59,6 +60,9 @@ class LoginViewController: UIViewController {
         welcomeVC.userName(name: loginView.idTextField.text ?? "")
         navigationController?.pushViewController(welcomeVC, animated: true)
     }
+    
+
+    
 
     @objc
     func tappedClearIDButton() {

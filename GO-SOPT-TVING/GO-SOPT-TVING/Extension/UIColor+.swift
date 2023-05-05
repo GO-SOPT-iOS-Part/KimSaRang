@@ -50,5 +50,8 @@ extension UIColor {
     class var textGrey1: UIColor {
         return UIColor(hex: "D6D6D6")
     }
+    class var back19: UIColor {
+        return UIColor(hex: "191919")
+    }
 
 }
