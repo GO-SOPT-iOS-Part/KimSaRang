@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Then
+import SnapKit
 
 class LoginView: UIView {
     
@@ -26,9 +28,16 @@ class LoginView: UIView {
         $0.textColor = .textGrey2
         $0.backgroundColor = .textGrey4
         $0.keyboardType = .default
-        if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton {
-            clearButton.setImage(UIImage(named: "x-circle"), for: .normal)
-        }
+//        if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton {
+//            clearButton.setImage(UIImage(named: "x-circle"), for: .normal)
+//        }
+//
+//        if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton {
+//            clearButton.setImage(UIImage(named: "x-circle"), for: .normal)
+//            let buttonSize = CGSize(width: 20, height: 20) // 원하는 크기로 수정
+//            clearButton.frame = CGRect(origin: clearButton.frame.origin, size: buttonSize)
+//        }
+//
         $0.clearButtonMode = UITextField.ViewMode.whileEditing
         $0.setLeftPaddingPoints(22)
         $0.layer.cornerRadius = 3
@@ -42,11 +51,11 @@ class LoginView: UIView {
         $0.textColor = .textGrey2
         $0.backgroundColor = .textGrey4
         $0.keyboardType = .default
-        
-        //Clear Button 이미지 변경
-        if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton {
-            clearButton.setImage(UIImage(named: "x-circle"), for: .normal)
-        }
+//
+//        //Clear Button 이미지 변경
+//        if let clearButton = $0.value(forKeyPath: "_clearButton") as? UIButton {
+//            clearButton.setImage(UIImage(named: "x-circle"), for: .normal)
+//        }
         //텍스트필드에 글자를 쓰고 있을때 클리어 버튼이 나타나도록
         $0.clearButtonMode = UITextField.ViewMode.whileEditing
 
@@ -66,7 +75,6 @@ class LoginView: UIView {
         $0.layer.borderColor = UIColor.textGrey4.cgColor
         $0.titleLabel?.textAlignment = .center
         $0.layer.cornerRadius = 3
-       
     }
     
     public lazy var findIDButton = UIButton().then {
@@ -141,9 +149,6 @@ private extension LoginView {
     
     func style() {
         self.backgroundColor = .black
-    }
-    
-    func setLayout() {
         [backButton,
          loginLabel,
          idTextField,
@@ -159,6 +164,9 @@ private extension LoginView {
          securityButton].forEach {
             self.addSubview($0)
         }
+    }
+    
+    func setLayout() {
         
         backButton.snp.makeConstraints{
             $0.height.equalTo(15)
@@ -229,12 +237,13 @@ private extension LoginView {
         }
         
         clearIDButton.snp.makeConstraints{
-            $0.size.equalTo(20)
+            $0.width.equalTo(20)
+            $0.height.equalTo(20)
             $0.trailing.equalTo(passwordTextField.snp.trailing).offset(-14)
             $0.centerY.equalTo(idTextField.snp.centerY)
         }
-        
-        
+
+
         clearPWButton.snp.makeConstraints{
             $0.size.equalTo(20)
             $0.trailing.equalTo(passwordTextField).offset(-56)
