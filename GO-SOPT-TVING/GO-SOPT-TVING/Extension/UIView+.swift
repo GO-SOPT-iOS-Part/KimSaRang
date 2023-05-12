@@ -11,4 +11,8 @@ extension UIView {
     func addSubviews(_ views: UIView...) {
         views.forEach { self.addSubview($0) }
     }
+    
+    static var className: String {
+        get { return String(describing: self)}
+    }
 }
