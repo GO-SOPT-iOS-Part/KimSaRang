@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3E4C062A0E213800D779AA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3E4C052A0E213800D779AA /* Alamofire */; };
+		7E3E4C092A0E222C00D779AA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3E4C082A0E222C00D779AA /* Config.swift */; };
+		7E3E4C0B2A0E227000D779AA /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3E4C0A2A0E227000D779AA /* NetworkResult.swift */; };
+		7E3E4C0D2A0E228D00D779AA /* PopularMovieDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3E4C0C2A0E228D00D779AA /* PopularMovieDataModel.swift */; };
+		7E3E4C0F2A0E22BF00D779AA /* PopularMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3E4C0E2A0E22BF00D779AA /* PopularMovieService.swift */; };
+		7E3E4C112A0E22DA00D779AA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3E4C102A0E22DA00D779AA /* MainViewController.swift */; };
+		7E3E4C152A0E3BD800D779AA /* PopularMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3E4C142A0E3BD800D779AA /* PopularMovieTableViewCell.swift */; };
+		7E3E4C1A2A0E55B800D779AA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3E4C192A0E55B800D779AA /* Kingfisher */; };
 		7E60ADC229F1532B00C4D119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E60ADC129F1532B00C4D119 /* AppDelegate.swift */; };
 		7E60ADC429F1532B00C4D119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E60ADC329F1532B00C4D119 /* SceneDelegate.swift */; };
 		7E60ADC629F1532B00C4D119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E60ADC529F1532B00C4D119 /* ViewController.swift */; };
@@ -43,6 +51,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E3E4C082A0E222C00D779AA /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		7E3E4C0A2A0E227000D779AA /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		7E3E4C0C2A0E228D00D779AA /* PopularMovieDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieDataModel.swift; sourceTree = "<group>"; };
+		7E3E4C0E2A0E22BF00D779AA /* PopularMovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieService.swift; sourceTree = "<group>"; };
+		7E3E4C102A0E22DA00D779AA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7E3E4C142A0E3BD800D779AA /* PopularMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieTableViewCell.swift; sourceTree = "<group>"; };
 		7E60ADBE29F1532B00C4D119 /* GO-SOPT-TVING.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GO-SOPT-TVING.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E60ADC129F1532B00C4D119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E60ADC329F1532B00C4D119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,14 +97,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E60ADD729F1544200C4D119 /* Inject in Frameworks */,
+				7E3E4C062A0E213800D779AA /* Alamofire in Frameworks */,
 				7E60ADDD29F1554D00C4D119 /* Then in Frameworks */,
 				7E60ADDA29F1553100C4D119 /* SnapKit in Frameworks */,
+				7E3E4C1A2A0E55B800D779AA /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E3E4C072A0E221900D779AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E3E4C082A0E222C00D779AA /* Config.swift */,
+				7E3E4C0A2A0E227000D779AA /* NetworkResult.swift */,
+				7E3E4C0C2A0E228D00D779AA /* PopularMovieDataModel.swift */,
+				7E3E4C0E2A0E22BF00D779AA /* PopularMovieService.swift */,
+				7E3E4C102A0E22DA00D779AA /* MainViewController.swift */,
+				7E3E4C142A0E3BD800D779AA /* PopularMovieTableViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7E60ADB529F1532B00C4D119 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +157,7 @@
 				7EA92C8C2A04299C0053DA30 /* MyPageHeaderView.swift */,
 				7EA92C8E2A042C2F0053DA30 /* MyPageFooterView.swift */,
 				7EA92C902A042D170053DA30 /* MyPageView.swift */,
+				7E3E4C072A0E221900D779AA /* Models */,
 			);
 			path = "GO-SOPT-TVING";
 			sourceTree = "<group>";
@@ -205,6 +235,8 @@
 				7E60ADD629F1544200C4D119 /* Inject */,
 				7E60ADD929F1553100C4D119 /* SnapKit */,
 				7E60ADDC29F1554D00C4D119 /* Then */,
+				7E3E4C052A0E213800D779AA /* Alamofire */,
+				7E3E4C192A0E55B800D779AA /* Kingfisher */,
 			);
 			productName = "GO-SOPT-TVING";
 			productReference = 7E60ADBE29F1532B00C4D119 /* GO-SOPT-TVING.app */;
@@ -238,6 +270,8 @@
 				7E60ADD529F1544200C4D119 /* XCRemoteSwiftPackageReference "Inject" */,
 				7E60ADD829F1553100C4D119 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				7E60ADDB29F1554D00C4D119 /* XCRemoteSwiftPackageReference "Then" */,
+				7E3E4C042A0E213800D779AA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7E3E4C182A0E55B700D779AA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 7E60ADBF29F1532B00C4D119 /* Products */;
 			projectDirPath = "";
@@ -278,8 +312,10 @@
 				7EA92C8D2A04299C0053DA30 /* MyPageHeaderView.swift in Sources */,
 				7E60AE0529F1B08A00C4D119 /* LoginView.swift in Sources */,
 				7E60ADEC29F15E4F00C4D119 /* UIFont+.swift in Sources */,
+				7E3E4C152A0E3BD800D779AA /* PopularMovieTableViewCell.swift in Sources */,
 				7E60AE0F29F20D8700C4D119 /* WelcomeViewController.swift in Sources */,
 				7E60ADC629F1532B00C4D119 /* ViewController.swift in Sources */,
+				7E3E4C0B2A0E227000D779AA /* NetworkResult.swift in Sources */,
 				7EA92C8F2A042C2F0053DA30 /* MyPageFooterView.swift in Sources */,
 				7EA92C862A04258B0053DA30 /* BaseViewController.swift in Sources */,
 				7EA92C7A2A02EB2F0053DA30 /* MainHomeViewController.swift in Sources */,
@@ -288,10 +324,14 @@
 				7EA92C822A0301CB0053DA30 /* MyPageViewController.swift in Sources */,
 				7E60AE0B29F1E37600C4D119 /* UIButton+.swift in Sources */,
 				7E60AE0329F1AC1300C4D119 /* LoginViewController.swift in Sources */,
+				7E3E4C112A0E22DA00D779AA /* MainViewController.swift in Sources */,
 				7E60ADC429F1532B00C4D119 /* SceneDelegate.swift in Sources */,
 				7E60AE0729F1BB6500C4D119 /* UIColor+.swift in Sources */,
+				7E3E4C0F2A0E22BF00D779AA /* PopularMovieService.swift in Sources */,
 				7E60AE0929F1C49200C4D119 /* UITextField+.swift in Sources */,
+				7E3E4C092A0E222C00D779AA /* Config.swift in Sources */,
 				7EA92C882A0425BD0053DA30 /* BaseView.swift in Sources */,
+				7E3E4C0D2A0E228D00D779AA /* PopularMovieDataModel.swift in Sources */,
 				7EA92C912A042D170053DA30 /* MyPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,9 +467,11 @@
 		7E60ADD329F1532D00C4D119 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = 9e2781c25451ca6784d37472a7bb68d2;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				BASE_URL = "https://api.themoviedb.org/3";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77GRA593GT;
@@ -456,9 +498,11 @@
 		7E60ADD429F1532D00C4D119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = 9e2781c25451ca6784d37472a7bb68d2;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				BASE_URL = "https://api.themoviedb.org/3";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77GRA593GT;
@@ -506,6 +550,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7E3E4C042A0E213800D779AA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7E3E4C182A0E55B700D779AA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		7E60ADD529F1544200C4D119 /* XCRemoteSwiftPackageReference "Inject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
@@ -533,6 +593,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7E3E4C052A0E213800D779AA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3E4C042A0E213800D779AA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7E3E4C192A0E55B800D779AA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3E4C182A0E55B700D779AA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		7E60ADD629F1544200C4D119 /* Inject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7E60ADD529F1544200C4D119 /* XCRemoteSwiftPackageReference "Inject" */;

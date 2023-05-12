@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
 //        let injectViewController = Inject.ViewControllerHost(MyPageViewController())
         self.window = UIWindow(windowScene: windowScene)
-        let navigationController = UINavigationController(rootViewController: MyPageViewController())
+        let navigationController = UINavigationController(rootViewController: MainViewController())
         self.window?.rootViewController = navigationController
 //        self.window?.rootViewController = injectViewController
         self.window?.makeKeyAndVisible()
